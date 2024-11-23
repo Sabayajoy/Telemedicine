@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <div class="Signup-box" id="SignupForm">
+        <h1>Sign up</h1>
+        <form> 
+            <!-- name fields-->
+            <label>Name</label>
+            <input type="text" id="name" placeholder=""><br>
+            
+            <!--Email fields-->
+            <label>Email</label>
+            <input type="email" id="password" placeholder=""><br>
+
+            <!--Password field-->
+            <label>Password</label>
+            <input type="Password" id="password" placeholder=""><br>
+            <label>Confrim Password</label>
+            <input type="text" id="confrimpassword" placeholder=""><br>
+
+            <!--age field-->
+            <label>Age</label>
+            <input type="number"  id="age" name="Age" required><br>
+
+            <!--gender radio buttons-->
+            <label for="Gender">Gender<br>
+            <input type="radio" id="gender" name="gender" value="male"> Male <br>
+            <input type="radio" name="gender" value="female"> Female
+        </label> <br>
+         <!--country dropdown menu-->
+         <label for="Country">Country</label>
+        <select id="country" name="country">
+            <option value="kenya">Kenya</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+            <option value="india">India</option>
+            <option value="germany">Germany</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+            <option value="brazil">Brazil</option>
+        </select><br>
+<!--Terms and condtion field-->
+<div class="terms">
+    <input type="checkbox" id="terms" name="terms">
+    <label for="terms">I agree to the terms and conditions</label>
+  </div>
+
+<!--submit button-->
+  <button type="submit">submit</button>
+        </form>
+  <p class="para-2">Already have an account? <a href="login.html">Login Here</a></p>
+</div>
+  <script src="script.js"></script>  
+</body>
+</html>
